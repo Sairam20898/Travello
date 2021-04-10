@@ -24,7 +24,7 @@ SECRET_KEY = '+m%=6jlvo8t(%g$lldop9-dj-99l(#$fgynrn4a!40pzd982k)'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['52.86.228.106']
 
 # Application definition
 
@@ -74,11 +74,12 @@ WSGI_APPLICATION = 'Travello.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'travellodb',
-        'USER': 'postgres',
-        'PASSWORD': '724726',
-        'HOST': 'localhost'
+        'USER': 'Sairam',
+        'PASSWORD': '8897884216',
+        'HOST': 'travello-dbms.cag5ztchl80d.us-east-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
